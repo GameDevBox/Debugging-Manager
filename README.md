@@ -2,8 +2,8 @@
 Simple Debugging Manager to strip debug code automatically from release builds.
 
 ### ⚡How To Use:
-- Simply replace Debug with DebugLogsManager.
-- 
+- Download the Script and import it into your project, and simply replace "Debug" with "DebugLogsManager".
+
 📺 Watch the full tutorial on YouTube:
 https://youtu.be/CaZwqB0s2Ec
 
