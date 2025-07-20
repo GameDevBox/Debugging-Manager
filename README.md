@@ -2,7 +2,7 @@
 Simple Debugging Manager to strip debug code automatically from release builds.
 
 ### ⚡How To Use:
-- Download the Script and import it into your project, and simply replace "Debug" with "DebugLogsManager".
+- Download the Script and import it into your project, and simply replace "Debug" with "DebugLogsManager". Add DEBUG_LOGS in your scripting define symbols, and whenever you want to build for production, just remove this tag to strip debugging out of your game.
 
 📺 Watch the full tutorial on YouTube:
 https://youtu.be/CaZwqB0s2Ec
