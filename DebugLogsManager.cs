@@ -1,46 +1,41 @@
-﻿using UnityEngine;
+using System.Diagnostics;
+using Debug = UnityEngine.Debug;
 
 public static class DebugLogsManager
 {
-    // Check if DEBUG_LOGS is defined to allow logs
-#if DEBUG_LOGS
+    [Conditional("DEBUG_LOGS")]
     public static void Log(string message)
     {
         Debug.Log(message);
     }
 
+    [Conditional("DEBUG_LOGS")]
     public static void Log(string message, UnityEngine.Object context)
     {
         Debug.Log(message, context);
     }
 
+    [Conditional("DEBUG_LOGS")]
     public static void LogWarning(string message)
     {
         Debug.LogWarning(message);
     }
 
+    [Conditional("DEBUG_LOGS")]
     public static void LogWarning(string message, UnityEngine.Object context)
     {
         Debug.LogWarning(message, context);
     }
 
+    [Conditional("DEBUG_LOGS")]
     public static void LogError(string message)
     {
         Debug.LogError(message);
     }
 
+    [Conditional("DEBUG_LOGS")]
     public static void LogError(string message, UnityEngine.Object context)
     {
         Debug.LogError(message, context);
     }
-#else
-    // If DEBUG_LOGS is not defined, disable logs
-    public static void Log(string message) { }
-    public static void LogWarning(string message) { }
-    public static void LogError(string message) { }
-
-    public static void Log(string message,UnityEngine.Object context) { }
-    public static void LogWarning(string message,UnityEngine.Object context) { }
-    public static void LogError(string message,UnityEngine.Object context) { }
-#endif
 }
